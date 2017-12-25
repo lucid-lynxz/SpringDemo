@@ -12,12 +12,12 @@ import org.springframework.context.annotation.Bean
 // 重要: 标识本项目为一个spring boot项目
 @SpringBootApplication
 @EnableConfigurationProperties(StorageProperties::class)
-class DemoApplication {
+class Application {
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
             // 指定程序的入口
-            SpringApplication.run(DemoApplication::class.java, *args)
+            SpringApplication.run(Application::class.java, *args)
         }
     }
 

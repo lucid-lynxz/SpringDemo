@@ -47,7 +47,7 @@ class DemoApplication {
 #### 多个 Class JavaLaunchHelper
 ```shell
 Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/bin/java (0x108fa74c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10afeb4e0). One of the two will be used. Which one is undefined.
-Error: Main method not found in class org.lynxz.demo.DemoApplication, please define the main method as:
+Error: Main method not found in class org.lynxz.demo.Application, please define the main method as:
    public static void main(String[] args)
 or a JavaFX application class must extend javafx.application.Application
 

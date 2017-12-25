@@ -1,6 +1,5 @@
 package org.lynxz.demo.storage
 
-
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.core.io.Resource
 import org.springframework.core.io.UrlResource
@@ -17,8 +16,7 @@ import java.nio.file.StandardCopyOption
 import java.util.stream.Stream
 
 @Service
-class FileSystemStorageService @Autowired
-constructor(properties: StorageProperties) : StorageService {
+class FileSystemStorageService @Autowired constructor(properties: StorageProperties) : StorageService {
 
     private val rootLocation: Path = Paths.get(properties.location)
 
@@ -79,6 +77,5 @@ constructor(properties: StorageProperties) : StorageService {
         } catch (e: IOException) {
             throw StorageException("Could not initialize storage", e)
         }
-
     }
 }
